@@ -1,7 +1,22 @@
 const http = require('http');
 const path = require('path');
 const fs =require('fs');
+const mongoose = require('mongoose');
+//const dotenv =require('dotenv');
 
+const express = require('express');
+const app = express();
+
+// dotenv.config();
+// //connect to DB
+// mongoose.connect(
+//     process.env.DB_CONNECT,
+//     {useNewUrlParser: true, useUnifiedTopology: true },
+//     ()=> console.log('connected to db')
+    
+// );
+  
+// app.listen(3000,()=>console.log('Server up and Running'));
 const server = http.createServer((req,res) =>{ 
     // if (req.url === '/'){
     //     fs.readFile(path.join(__dirname,'public','index.html'), 
