@@ -7,9 +7,9 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
-
 // dotenv.config();
 // //connect to DB
+
 // mongoose.connect(
 //     process.env.DB_CONNECT,
 //     {useNewUrlParser: true, useUnifiedTopology: true },
