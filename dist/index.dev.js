@@ -4,9 +4,8 @@ var http = require('http');
 
 var path = require('path');
 
-var fs = require('fs');
-
-var mongoose = require('mongoose'); //const dotenv =require('dotenv');
+var fs = require('fs'); //const mongoose = require('mongoose');
+//const dotenv =require('dotenv');
 
 
 var express = require('express');
@@ -96,7 +95,7 @@ var server = http.createServer(function (req, res) {
     }
   });
 });
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 8000;
 server.listen(PORT, function () {
   return console.log("Server running on port ".concat(PORT));
 });
